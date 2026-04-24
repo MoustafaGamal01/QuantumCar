@@ -88,7 +88,7 @@ namespace QuantumCar.src.Models
             }
 
             int newSpeed = Math.Max(_carSpeed - 20, 0);
-            int toBeDecreased = newSpeed - _carSpeed;
+            int toBeDecreased = _carSpeed - newSpeed;
 
             while (toBeDecreased > 0)
             {
