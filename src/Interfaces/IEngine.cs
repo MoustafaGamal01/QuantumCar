@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuantumCar.Entities.Interfaces
+namespace QuantumCar.Interfaces
 {
     public interface IEngine
     {

@@ -1,4 +1,4 @@
-﻿using QuantumCar.src.Interfaces;
+﻿global using QuantumCar.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
