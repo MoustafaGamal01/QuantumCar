@@ -43,7 +43,6 @@ namespace QuantumCar.src.Models.Engine
 
             if (!ReferenceEquals(_working, target))
             {
-                string from = ReferenceEquals(_working, _gas) ? "Gas" : "Electric";
                 string to = ReferenceEquals(target, _gas) ? "Gas" : "Electric";
 
                 _working.Stop();
