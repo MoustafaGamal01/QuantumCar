@@ -98,5 +98,17 @@ namespace QuantumCar.src.Models
             _engine.SpeedChanging(_carSpeed);
             Console.WriteLine($"Braked {_carSpeed} km/h");
         }
+
+        public void ReplaceEngine(IEngine newEngine)
+        {
+            if (_carIsWorking)
+            {
+                Console.WriteLine("Stop the car first");
+                return;
+            }
+            _engine = newEngine;
+            Console.WriteLine("Car Engine replaced");
+        }
+
     }
 }
