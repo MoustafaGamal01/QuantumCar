@@ -30,6 +30,12 @@ namespace QuantumCar.src.Models
         }
         public static void ReplaceEngine(Car car, EngineType type)
         {
+            if (car._carIsWorking)
+            {
+                Console.WriteLine("Stop the car first");
+                return;
+            }
+
             Console.WriteLine($"Factory Replacing engine with type: {type}");
             car.ReplaceEngine(CreateEngine(type));
         }

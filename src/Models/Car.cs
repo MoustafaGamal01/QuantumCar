@@ -8,7 +8,7 @@ namespace QuantumCar.src.Models
     {
         private const int _maxSpeed = 200;
         private IEngine _engine;
-        private bool _carIsWorking;
+        public bool _carIsWorking;
         public int _carSpeed => _engine.Speed;
         public Car(IEngine engine)
         {
